@@ -458,7 +458,7 @@ footer .container-grid {
     font-size: 24px;
 }
 
-.icones-redes{
+.icones-redes {
     width: 240px;
 
     display: flex;
@@ -466,10 +466,129 @@ footer .container-grid {
 
 }
 
-.icones-redes a{
-    color:var(--branco);
+.icones-redes a {
+    color: var(--branco);
 }
 
-.icones-redes a:hover{
+.icones-redes a:hover {
     color: var(--verde-pixelv);
+}
+
+/* ------------------menu hamburger--------------------- */
+.menu-fechado {
+    display: none;
+}
+
+#icone-barras,
+#icone-x {
+    display: none;
+}
+
+/* ------------------------responvividade------------------------ */
+@media screen and (max-width: 1024px) {
+
+    .titulo,
+    .titulo h2 {
+        font-size: 22px;
+        font-family: "recursive", sans-linear;
+    }
+
+    .titulo span {
+        line-height: 45px;
+
+    }
+
+    .menu {
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (max-width:768px) {
+    header {
+        position: relative;
+
+    }
+
+    header button {
+        width: 50px;
+
+        background: none;
+        border: none;
+
+        cursor: pointer;
+        display: unset;
+    }
+
+    header svg {
+        fill: var(--branco);
+    }
+
+    nav.menu{
+        height: 500px;
+        width: 350px;
+
+        padding: 0px 30px;
+
+        background-color: var(--preto);
+
+        flex-direction: column;
+        justify-content: space-around;
+
+        position:absolute;
+        top:165px;
+        right:0px;
+
+        z-index:1;
+
+
+    }
+
+    .conteudo-banner img{
+        display: none;
+    }
+    .conteudo-banner{
+      text-align: center;
+    }
+
+    #sobre img{
+        display: none;
+    }
+
+    .titulo{
+        justify-content: center;
+    }
+
+    #cases img{
+        height: 200px;
+    }
+
+    footer .roda-pe{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    footer img{
+        height: 80px;
+    }
+
+    .redes-sociais{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .redes-sociais svg{
+        height: 35px;
+    }
+}
+@media screen and(max-width){
+    nav.menu{
+        width: 260px;
+    }
+
+    header img{
+        width: 185px;
+    }
 }
