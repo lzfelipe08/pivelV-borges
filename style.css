@@ -10,7 +10,7 @@
 }
 
 :root {
-    --branco:#ffffff;
+    --branco: #ffffff;
     --preto: #000000;
     --verde-pixelv: #00C621;
     --roxo-pixeV: #4700CF;
@@ -23,19 +23,20 @@
     max-width: 1400px;
     margin: 0 auto;
 }
-body{
+
+body {
     overflow-x: hidden;
     background-color: var(--fundo-site);
 }
 
-.titulo{
+.titulo {
     display: flex;
     font-family: "recursive", sans-linear-bold;
     font-size: 35px;
     font-weight: 600;
 }
 
-.titulo h2{
+.titulo h2 {
     color: var(--branco);
     margin-bottom: 0;
     background-color: var(--roxo-pixeV);
@@ -45,10 +46,11 @@ body{
 
 }
 
-.titulo span{
+.titulo span {
     color: var(--roxo-pixeV);
     border-bottom: solid 3px var(--verde-pixelv);
 }
+
 /* --------------------------------------------------header-------------------------------------------------------- */
 
 
@@ -144,10 +146,10 @@ header img {
 }
 
 /* ------------------SOBRE------------------ */
-#sobre{
+#sobre {
     display: flex;
     align-items: center;
-    
+
     gap: 80px;
 
     margin-top: 120px;
@@ -155,22 +157,269 @@ header img {
 
 }
 
-#sobre img{
+#sobre img {
     max-width: 460px;
     width: 40%;
     border-radius: 40px;
     box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
 }
 
-#sobre h2{
+#sobre h2 {
     margin-right: 5px;
 }
 
-#sobre p{
+#sobre p {
     font-family: "recursive", sans-linear;
     font-size: 20px;
     text-align: justify;
     margin-top: 30px;
 }
+
 /* -----------------------paralax------------------------------ */
 
+#parallax {
+    height: 250px;
+    background: linear-gradient(rgba(0, 0, 0, 0.26)), url(./img/parallax.svg);
+    margin-bottom: 120px;
+    background-attachment: fixed;
+    background-size: 30%;
+}
+
+/* -------------------------serviços------------------------------- */
+
+#serviços {
+    margin-bottom: 120px;
+}
+
+#serviços .titulo {
+    justify-content: center;
+    margin-bottom: 55px;
+}
+
+#serviços h2 {
+    margin-left: 5px;
+}
+
+.container-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+
+
+}
+
+.linha-roxa {
+    height: 250px;
+    width: 100vw;
+    background: linear-gradient(0deg, rgba(36, 0, 105, 1)0%, rgba(71, 0, 207, 1));
+    position: absolute;
+    z-index: -1;
+    top: calc(50% - 125px);
+}
+
+#serviços .card {
+    width: 300px;
+    margin: 20px;
+    padding: 40px 20px;
+    border-radius: 40px;
+    background-color: #f2f2f2;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#serviços .card h3 {
+    font-size: 24px;
+    margin: 5px 0 30px;
+    color: var(--roxo-pixeV);
+    font-family: "recursive", sans-linear-bold;
+    text-align: center;
+}
+
+#serviços .card p {
+    font-family: "recursive", sans-linear;
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+#serviços .card svg {
+    color: var(--roxo-pixeV);
+    height: 76px;
+}
+
+#serviços .card:hover {
+    border: solid 3px var(--verde-pixelv);
+}
+
+#serviços .card:hover svg {
+    fill: var(--verde-pixelv);
+}
+
+#serviços .card:hover h3 {
+    color: var(--verde-pixelv);
+}
+
+/* -----------------------------------------case-------------------------------------------- */
+
+#cases h2 {
+    margin-right: 5px;
+}
+
+#cases {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 120px;
+
+}
+
+#cases img {
+    height: 300px;
+    border-radius: 40px;
+
+}
+
+#meuCarrossel {
+    max-width: 1170px;
+    width: 90%;
+}
+
+/* ----------------------contato----------------------- */
+
+#contato {
+    text-align: center;
+    padding-bottom: 100px;
+    margin-top: 100px;
+}
+
+#contato .titulo {
+    justify-content: center;
+    margin-bottom: 55px;
+}
+
+#contato h2 {
+    margin-left: 5px;
+}
+
+#contato form {
+    max-width: 980px;
+    width: 90%;
+
+    margin: 0 auto;
+    padding: 60px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border: solid 3px var(--roxo-pixeV);
+    border-radius: 40px;
+    background-color: var(--CONTATO);
+
+    color: var(--preto);
+    font-family: "recursive", sans-linear;
+    font-size: 17px;
+}
+
+
+.campo {
+    width: 60%;
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin-bottom: 50px;
+}
+
+.campo-descricao {
+    width: 60%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin-bottom: 30px;
+}
+
+.campo input {
+    height: 40px;
+
+    color: var(--preto);
+    background-color: var(--branco);
+
+    border: none;
+    border-radius: 4px;
+
+    text-indent: 10px;
+    outline: none;
+
+}
+
+.campo-descricao textarea {
+    color: var(--preto);
+    background-color: var(--branco);
+
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    padding: 10px;
+
+    resize: none;
+}
+
+.campo label,
+.campo-descricao label {
+    margin-bottom: 15px;
+}
+
+.campo input,
+.campo-descricao textarea {
+    font-family: "recursive", sans-linear;
+    font-size: 17px;
+}
+
+.campo input::placeholder .campo-descricao textarea::placeholder {
+    color: #a0a0a0;
+}
+
+.campo input:focus,
+.campo-descricao textarea:focus {
+    outline: 2px solid var(--verde-pixelv);
+
+}
+
+#contato form button {
+    height: 40px;
+    width: 60%;
+
+    background-color: var(--roxo-pixeV);
+    color: var(--branco);
+
+    border: none;
+    border-radius: 4px;
+
+    font-size: 17px;
+    font-family: "recursive", sans-linear-bold;
+    font-weight: 700;
+
+    text-transform: uppercase;
+    cursor: pointer;
+
+    transition: background-color 500ms;
+}
+
+#contato form button:hover {
+    background-color: var(--verde-pixelv);
+
+}
